@@ -1,0 +1,60 @@
+#areamenu, navbar { width: 100%; }
+
+/*
+ * Formatando o texto dos itens do menu.
+ */
+#menu { font-size: 18px }
+
+/*
+ * Permite que os itens do menu 
+ * apareçam lado a lado, como
+ * blocos.
+ */
+#menu li {
+    display: block;
+    float: left;
+    background-color: #CCD5AE;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px 0;
+    width: 130px;
+    text-align: center;
+}
+
+/*
+ * Esconder os sub-itens quando o mouse não está sob eles.
+ */
+#menu li ul { display: none; }
+
+/*
+ * Estilizar links do menu.
+ */
+#menu li span, #menu li a {
+    color: black;
+    text-decoration: none;
+}
+
+/*
+ * Efeito para quando passar o mouse
+ * em cima de um elemento.
+ */
+#menu li:hover { 
+    background-color: silver;
+    cursor: pointer;
+ }
+
+ /*
+  * Faz com que os subitens apareçam
+  * quando o mouse estiver sobre o menu.
+  */
+#menu li:hover ul {
+     display: block;
+     position: absolute;
+     z-index: 99;
+     margin-top: 10px;
+} 
+
+/*
+ * Faz com que os subitens fiquem um abaixo do outro.
+ */
+#menu li ul li { float: none }
