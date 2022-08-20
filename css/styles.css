@@ -1,0 +1,78 @@
+/*
+ * Remover as margens e preenchimentos 
+ * de todos os elementos
+ */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.quebra { clear: both }
+
+/*
+ * Definido uma cor de fundo.
+ */
+body { background-color: aliceblue }
+
+section, table#festival { margin-top: 50px; }
+
+/*
+ * Estilizando o título da página.
+ */
+h1 {
+    color: blueviolet;
+    font-size: 72px;
+    font-family: Caladea;
+    text-transform: uppercase;
+}
+
+/*
+ * Estilizando os parágrafos de texto
+ * da página.
+ */
+p {
+    font-family: Montserrat;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+/*
+ * Classes para formatação de texto.
+ */
+.center     { text-align: center; }
+.texto      { text-align: justify; }
+.negrito    { font-weight: bolder; }
+.sublinhado { text-decoration: underline; }
+.outra-cor { color: #222 }
+
+/*
+ * Definindo uma largura máxima 
+ * pro conteúdo da página e
+ * centralizando ele.
+ */
+div#container {
+    max-width: 800px;
+    margin: auto;
+}
+
+/*
+ * Definindo bordas para a tabela.
+ */
+table#festival, table#festival td {
+    border: solid 2px black;
+    border-collapse: collapse;
+}
+
+/*
+ * Estilizando a tabela.
+ */
+table#festival { font-size: 28px; }
+table#festival td, table#festival th { padding: 10px; }
+table#festival thead tr th { background-color: #A00; color: white }
+
+/*
+ * Formatando cores alternadas
+ * nas linhas da tabela.
+ */
+table#festival tr:nth-child(even) { background-color: green; }
+table#festival tr:nth-child(odd) { background-color: greenyellow; }
