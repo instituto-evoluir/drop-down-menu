@@ -11,14 +11,14 @@
  * blocos.
  */
 #menu li {
-    display: block;
-    float: left;
     background-color: #CCD5AE;
     border: 1px solid black;
     border-radius: 5px;
+    display: block;
+    float: left;
     padding: 10px 0;
-    width: 130px;
     text-align: center;
+    width: 130px;
 }
 
 /*
@@ -49,9 +49,9 @@
   */
 #menu li:hover ul {
      display: block;
+     margin-top: 10px;
      position: absolute;
      z-index: 99;
-     margin-top: 10px;
 } 
 
 /*
